@@ -18,3 +18,11 @@ gallons_per_aquifer = 0 # I watched a YouTube video about it
 
 # Households in Memphis, TN
 households = 0 # I asked my neighbor
+
+
+def option1():
+    print("do some stuff")
+
+    
+if response == "1":
+    option1()
