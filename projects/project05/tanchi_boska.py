@@ -32,19 +32,19 @@ def draw_corn(x, y):
 def play_game():
     kernels = int(input("How many kernels will you play with? "))
     white_points = int(input("How many points are white kernels worth? "))
-    round = 1
+    current_round = 1
     player_1_score = 0
     player_2_score = 0
     while round <= 3:
-        draw_round(round, 0, 0) # display a blank round screen (no kernels)
+        draw_round(current_round, 0, 0) # display a blank round screen (no kernels)
         draw_scores(player_1_score, player_2_score) # draw_round clears the screen: redraw the scores
         input("Player 1: press Enter to throw kernels. ")
-        player_1_score += take_turn(round, kernels, white_points) 
+        player_1_score += take_turn(current_round, kernels, white_points) 
         draw_scores(player_1_score, player_2_score) # the scores may change
         input("Player 2: press Enter to throw kernels. ")
-        player_2_score += take_turn(round, kernels, white_points)
+        player_2_score += take_turn(current_round, kernels, white_points)
         draw_scores(player_1_score, player_2_score) # the scores may change
-        round += 1
+        current_round += 1
         input("Press enter to finish the round.")
     if player_1_score > player_2_score:
         return "Player 1"
@@ -55,7 +55,7 @@ def play_game():
 ## ## ## ## ## ## ## ## ## 
 
 
-def take_turn(round, kernels, white_points):
+def take_turn(current_round, kernels, white_points):
     # randomly chooses some kernels to be white and the rest to be black
 
     # calculates the score of the turn
@@ -66,7 +66,7 @@ def take_turn(round, kernels, white_points):
     return score
 
 
-def draw_round(round, white_kernels, black_kernels):
+def draw_round(current_round, white_kernels, black_kernels):
     # clears canvas
 
     # draws the round number at the top
