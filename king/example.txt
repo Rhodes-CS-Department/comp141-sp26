@@ -1,0 +1,3 @@
+this-is-an-example-for-splitting
+notice-the-separator-we-are-using
+you-can-split-on-anything-!!!
