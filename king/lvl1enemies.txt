@@ -1,3 +1,4 @@
-goblins 5
-troll 2
-birds 10
+type health damage
+goblin 10 5
+troll 100 12
+bird 4 1
