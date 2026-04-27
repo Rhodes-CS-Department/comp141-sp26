@@ -60,6 +60,8 @@ def grayscale(red, green, blue):
 def process_header(input_file, output_file):
     # Read the first three lines from the input file and write them to the output file.
     # These file objects were already opened in main() for you.
+    # You can use a for loop over all the lines, and just return early (after 3 iterations)
+    # or you can use file.readline() 3 times.
     pass # remove this line (including the 'pass') when you start to write this function.
 
 # This function applies the specified filter to each pixel in input, writing it to output.
@@ -127,6 +129,7 @@ def main():
     9. Grayscale
     """))
     # TODO: ADD input validation loop here to ensure valid input from the user 
+    #  a valid input ends in ".ppm"
 
     # open the file
     input_file = open(input_filename, 'r')

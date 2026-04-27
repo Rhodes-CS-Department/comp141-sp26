@@ -1,0 +1,6 @@
+Tilly,2022,Golden Retriever
+Lucy,2010,Cocker Spaniel
+Bear,2024,Boxer
+Monty,2015,Collie
+Duo,2015,Newfoundland
+Luna,2024,Poodle
