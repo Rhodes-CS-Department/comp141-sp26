@@ -1,0 +1,3 @@
+Dish Towel;10
+Tablecloth;4
+Pillow Case;9
